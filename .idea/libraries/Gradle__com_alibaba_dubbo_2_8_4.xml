@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.alibaba:dubbo:2.8.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.alibaba/dubbo/2.8.4/45fd9ca520364dfcff8941297b3f94b0a3421200/dubbo-2.8.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.alibaba/dubbo/2.8.4/defbd4e9dc52e0e72b8aed3d88b842e8b5644bd9/dubbo-2.8.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

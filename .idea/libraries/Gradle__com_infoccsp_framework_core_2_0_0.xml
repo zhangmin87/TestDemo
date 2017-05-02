@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.infoccsp:framework-core:2.0.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.infoccsp/framework-core/2.0.0/7d670642fc9b89439ba8c5e5f8dad6767cc8cec1/framework-core-2.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.infoccsp/framework-core/2.0.0/48a70e73c087e08c7f17340f6243334ee4fe1b19/framework-core-2.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

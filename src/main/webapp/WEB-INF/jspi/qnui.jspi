@@ -1,0 +1,3 @@
+<!-- qnui -->
+<script src="${CDN}/qnui/1.5.1/js/sui.min.js"></script>
+<link rel="stylesheet" href="${CDN}/qnui/1.5.1/css/sui.min.css">

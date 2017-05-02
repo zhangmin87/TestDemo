@@ -1,0 +1,10 @@
+<!-- date-range-picker -->
+<link rel="stylesheet" href="${CDN}/AdminLTE-2.3.7/plugins/daterangepicker/daterangepicker.css">
+<script src="${CDN}/moment-2.17.0/min/moment.min.js"></script>
+<!--
+<script src="${CDN}/moment-2.17.0/min/locales.min.js"></script>
+<script>
+moment.lang('zh-cn');
+</script>
+-->
+<script src="${CDN}/AdminLTE-2.3.7/plugins/daterangepicker/daterangepicker.js"></script>

@@ -1,0 +1,2 @@
+<!-- 条形码生成插件-->
+<script src="${CDN}/JsBarcode/3.5.8/JsBarcode.all.min.js"></script>

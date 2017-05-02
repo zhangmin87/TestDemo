@@ -1,0 +1,37 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="ctx" value="${pageContext.request.contextPath}" scope="request"/>
+<%-- <c:set var="CDN" value="http://ceb.ceair.com:7003/static/plugins" scope="application"/> --%>
+<c:set var="CDN" value="http://dev.infoccsp.com/staticNG" scope="application"/>
+<c:set var="staticVersion" value="20161201" scope="application"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<%-- IE=edge告诉IE使用最新的引擎渲染网页. --%>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<%-- 让浏览器自动使用极速模式（webkit内核） --%>
+<meta name="renderer" content="webkit"/>
+<%-- 为搜索引擎提供的关键字列表 --%>
+<meta content="跨境电商" name="keywords">
+<%-- 告诉搜索引擎你的网站主要内容 --%>
+<meta content="致力于跨境电商进出口服务" name="description">
+<%-- 浏览器标签页上的个性小图标 --%>
+<link rel="shortcut icon" href="${CDN}/favicon-eal.ico" type="image/x-icon"/>
+<%-- 收藏夹中的个性小图标 --%>
+<link rel="BookMark" href="${CDN}/favicon-eal.ico" type="image/x-icon"/>
+<%-- bootstrap --%>
+<link rel="stylesheet" href="${CDN}/bootstrap-3.3.6/css/bootstrap.min.css">
+<%-- style.css --%>
+<link rel="stylesheet" href="${ctx}/static/css/style.css?v=${staticVersion}">
+<link rel="stylesheet" href="${ctx}/static/css/loaders.css?v=${staticVersion}">
+<!--[if lt IE 9]>
+<script>
+window.location.href = "${CDN}/browser.html";
+</script>
+<![endif]-->
+<%-- jQuery --%>
+<script src="${CDN}/jquery-2.2.4/dist/jquery.min.js"></script>
+<%-- bootstrap --%>
+<script src="${CDN}/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+<%-- simple-validate.js --%>
+<script src="${CDN}/local/js/simple-validator/1.0.0/simple-validate.js"></script>
+<script src="${CDN}/local/js/simple-validator/1.0.0/simple-validate.zh-CN.js"></script>
+<%-- init.js --%>
+<script src="${ctx}/static/js/init.js?v=${staticVersion}"></script>

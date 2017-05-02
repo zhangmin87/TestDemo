@@ -1,0 +1,20 @@
+<link href="${CDN}/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet"/>
+<script type="text/javascript" src="${CDN}/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="${CDN}/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+<script>
+        $(".form_date").datetimepicker({
+            format: "yyyy-mm-dd",
+            autoclose: true,
+            minView: 2,
+            pickerPosition: "bottom-left",
+            language: 'zh-CN'
+        });
+        $(".form_datetime").datetimepicker({
+            format: "yyyy-mm-dd hh:ii",
+            autoclose: true,
+            minView: 0,
+            minuteStep: 1,
+            pickerPosition: "bottom-left",
+            language: 'zh-CN'
+        });
+</script>
