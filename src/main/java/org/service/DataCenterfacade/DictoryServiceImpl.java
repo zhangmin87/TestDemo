@@ -11,6 +11,8 @@ import org.assemble.DictionaryAssembler;
 import org.dto.dictory.DictoryDTO;
 import org.entity.Dictory;
 import org.hibernate.criterion.Order;
+import org.mapper.SelectDictoryMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -29,14 +31,12 @@ public class DictoryServiceImpl extends BaseServiceImpl implements DictoryServic
     @Resource(name = "dictionaryAssembler")
     private DictionaryAssembler assembler;
 
+    //注入mapper
+    @Autowired
+    private SelectDictoryMapper mapper;
     public List<DictoryDTO> getDictionaryOption(String category) {
-        //根据类别，代码获取数据字典项
-        List<Dictory> dictories = selectDictorynaizes(category);
-        if(CollectionUtils.isEmpty(dictories)){
-            return Collections.emptyList();
-        }
-        //根据Entity 组装DTO
-        return getDictionaryAssembler().assembleDictoryDTO(dictories);
+        List<DictoryDTO> dictoryDTOs=mapper.selectDictory(category);
+        return dictoryDTOs;
     }
     /**
      * 按照类别获取查询字典项

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.mapper.SelectDictoryMapper">
+    <select id="selectDictory" resultType="org.dto.dictory.DictoryDTO" parameterType="java.lang.String">
+         SELECT
+           DICT_ID  AS id,
+           CATEGORY AS category,
+           DICT_CODE AS dictCode,
+           DICT_NAME AS dictName,
+           SEQ  AS seq,
+           KEY1 AS key1,
+           KEY2 AS key2,
+           KEY3 AS key3
+        FROM T_BAS_DICT
+        WHERE CATEGORY = #{category,jdbcType=VARCHAR}
+        ORDER BY SEQ ASC
+    </select>
+</mapper>

@@ -12,5 +12,7 @@ public class Constants {
     public static final String  DICT_DECLSTS                                        = "DECLARE_STATUS";
     // 数据字典 - 海关审核代码
     public static final String  DICT_CUSTOMS_RSPCODE                                = "CUSTOMS_RSPCODE";
+    //数据字典 --CUSTOMS_CODE
+    public static final String CUSTOMS_CODE                                           ="CUSTOMS_CODE";
 
 }

@@ -15,7 +15,7 @@
     <section class="content">
         <div class="row">
             <div class="col-md-12">
-                <form id="form1" method="post">
+                <form:form modelAttribute="queryDTO" method="post" name="queryForm" action="">
                     <div class="box box-primary">
                         <div class="box-header with-border">
                             <h3 class="box-title">签名校验</h3>
@@ -23,55 +23,20 @@
                         <div class="box-body form-horizontal">
                             <div class="row form-group">
                                 <div class="col-md-6">
-                                    <label class="col-sm-3 control-label">签名算法</label>
-                                    <div class="col-sm-9">
-                                        <select name="algorithms" class="form-control input-sm required">
-                                            <option value="MD5">MD5</option>
-                                        </select>
-                                    </div>
+                                    <label class="col-sm-3 control-label">总运单号</label>
+                                    <form:select path="sNo" cssClass="form-control input-sm">
+                                        <form:option value=""></form:option>
+                                        <form:options items="${DECLARE_STATUS}" itemValue="dictCode" itemLabel="dictName"/>
+                                    </form:select>
                                 </div>
                             </div>
                             <div class="row form-group">
                                 <div class="col-md-6">
-                                    <label class="col-sm-3 control-label">字符编码</label>
-                                    <div class="col-sm-9">
-                                        <select name="charset" class="form-control input-sm required">
-                                            <option value="UTF-8">UTF-8</option>
-                                            <option value="GBK">GBK</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <div class="col-md-6">
-                                    <label class="col-sm-3 control-label">SecretKey</label>
-                                    <div class="col-sm-9">
-                                        <input name="secureKey" type="text" class="form-control input-sm required" title="SecretKey">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <div class="col-md-6">
-                                    <label class="col-sm-3 control-label">请求报文</label>
-                                    <div class="col-sm-9">
-                                        <textarea name="reqMessageText" class="form-control input-sm required" title="请求报文" rows="10"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <div class="col-md-6">
-                                    <label class="col-sm-3 control-label"></label>
-                                    <div class="col-sm-9">
-                                        <button type="button" class="btn btn-sm btn-primary" onclick="doEncode();">生成签名</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row form-group">
-                                <div class="col-md-6">
-                                    <label class="col-sm-3 control-label">数字签名</label>
-                                    <div class="col-sm-9">
-                                        <input id="signature" name="signature" type="text" class="form-control input-sm">
-                                    </div>
+                                    <label class="col-sm-3 control-label">分运单号</label>
+                                    <form:select path="Sname" cssClass="form-control input-sm">
+                                        <form:option value=""></form:option>
+                                        <form:options items="${CUSTOMS_CODE}" itemValue="dictCode" itemLabel="dictName"/>
+                                    </form:select>
                                 </div>
                             </div>
                         </div>
@@ -79,7 +44,7 @@
                             <i class="fa fa-refresh fa-spin"></i>
                         </div>
                     </div>
-                </form>
+                </form:form>
             </div>
         </div>
     </section>
